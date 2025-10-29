@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-wrapper {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.registration-form {
+    width: 100%;
+}
+
+.form-item {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-item label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.form-item input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e1e1e1;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background-color: #fafafa;
+}
+
+.form-item input:focus {
+    outline: none;
+    border-color: #667eea;
+    background-color: white;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.form-item small {
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+    height: 16px;
+}
+
+/* 成功状态 */
+.form-item.success input {
+    border-color: #28a745;
+}
+
+.form-item.success small {
+    color: #28a745;
+}
+
+/* 错误状态 */
+.form-item.error input {
+    border-color: #dc3545;
+}
+
+.form-item.error small {
+    color: #dc3545;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+/* 错误状态 - 红色边框和红色文字 */
+.form-item.error input {
+    border-color: #dc3545;
+    background-color: #fff5f5;
+}
+
+.form-item.error small {
+    color: #dc3545;
+    font-size: 12px;
+    margin-top: 5px;
+    display: block;
+}
+
+/* 成功状态 - 绿色边框 */
+.form-item.success input {
+    border-color: #28a745;
+}
+
+.form-item.success small {
+    color: #28a745;
+}
